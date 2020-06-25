@@ -1,0 +1,28 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureList {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.featureLabel {
+  font-family: 'Poppins', sans-serif;
+  display: inline-flex;
+}
+
+.featureValue {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-right: 5px;
+}
+
+.featureIcon {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #959b9a;
+}

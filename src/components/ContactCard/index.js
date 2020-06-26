@@ -6,22 +6,21 @@ import ReviewBadge from '../ReviewBadge'
 import styles from './ContactCard.module.css'
 import Button from '../Button'
 
-const ContactCard = ({ user }) => {
+const ContactCard = ({
+  user: { photo, name, rate, phoneNumber, reviewUrl }
+}) => {
   return (
     <Card>
       <CardRow>
-        <img
-          src='https://randomuser.me/api/portraits/women/72.jpg'
-          className={styles.photo}
-        />
+        <img src={photo} className={styles.photo} />
         <h1 className={styles.name}>
-          <strong>Adam Magnuss</strong>
+          <strong>{name}</strong>
         </h1>
 
-        <ReviewBadge rate={4.9} url='url' />
+        {rate && <ReviewBadge rate={rate} url={reviewUrl} />}
       </CardRow>
       <CardRow>
-        <PhoneNumberReveal phoneNumber='544 398 1294' />
+        <PhoneNumberReveal phoneNumber={phoneNumber} />
       </CardRow>
 
       <div className={styles.footer}>

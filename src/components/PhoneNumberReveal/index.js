@@ -8,7 +8,11 @@ const PhoneNumberReveal = ({ phoneNumber }) => {
 
   const togglePhoneNumber = () => {
     if (display) {
-      return <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+      return (
+        <a href={`tel:${phoneNumber}`}>
+          <b>{phoneNumber}</b>
+        </a>
+      )
     } else {
       return (
         <>

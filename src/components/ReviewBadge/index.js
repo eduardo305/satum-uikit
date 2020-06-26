@@ -9,7 +9,8 @@ const ReviewBadge = ({ url, rate }) => {
           <use xlinkHref='/assets/icons/icons.svg#icon-star-1' />
         </svg>
       </div>
-      <div className={styles.column}>{`${rate}/5`}</div> <a href={url}>[123]</a>
+      <div className={styles.column}>{`${rate.score}/5`}</div>{' '}
+      <a href={url}>[{rate.numberOfReviews}]</a>
     </div>
   )
 }

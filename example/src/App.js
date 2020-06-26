@@ -18,7 +18,10 @@ const App = () => {
       <Feature label='Bedroom' icon='icon-bed'>
         4
       </Feature>
-      <ContactCard user={user} />
+      <div style={{ position: 'relative' }}>
+        <ContactCard user={user} />
+      </div>
+
       <ExampleComponent text='Create React Library Example 😄' />
     </>
   )

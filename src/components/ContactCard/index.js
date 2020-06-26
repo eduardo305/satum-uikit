@@ -11,20 +11,22 @@ const ContactCard = ({
 }) => {
   return (
     <Card>
-      <CardRow>
-        <img src={photo} className={styles.photo} />
-        <h1 className={styles.name}>
-          <strong>{name}</strong>
-        </h1>
+      <div className={styles.contactCard}>
+        <CardRow>
+          <img src={photo} className={styles.photo} />
+          <h1 className={styles.name}>
+            <strong>{name}</strong>
+          </h1>
 
-        {rate && <ReviewBadge rate={rate} url={reviewUrl} />}
-      </CardRow>
-      <CardRow>
-        <PhoneNumberReveal phoneNumber={phoneNumber} />
-      </CardRow>
+          {rate && <ReviewBadge rate={rate} url={reviewUrl} />}
+        </CardRow>
+        <CardRow>
+          <PhoneNumberReveal phoneNumber={phoneNumber} />
+        </CardRow>
 
-      <div className={styles.footer}>
-        <Button label='Contact Agent' icon='icon-envelope-o' />
+        <div className={styles.footer}>
+          <Button label='Contact Agent' icon='icon-envelope-o' />
+        </div>
       </div>
     </Card>
   )

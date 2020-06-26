@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Feature from './components/Feature'
+import Card from './components/Card'
+import ContactCard from './components/ContactCard'
 import './index.css'
 
 export const ExampleComponent = ({ text }) => {
@@ -14,4 +16,4 @@ export const ExampleComponent = ({ text }) => {
   )
 }
 
-export { Feature }
+export { Feature, ContactCard, Card }

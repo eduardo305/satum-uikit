@@ -1,0 +1,36 @@
+.phoneNumber {
+  background-color: #d1f1e7;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.photo {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.reviews {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #959b9a;
+}
+
+a:not(type='tel') {
+  color: #23ab7f;
+  text-decoration: underline;
+}
+
+.footer {
+  background: #f3f6f5;
+  padding: 20px 10px;
+  width: calc(100% + 20px);
+  text-align: center;
+  border-top: 1px solid #dae0de;
+}

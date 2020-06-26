@@ -1,0 +1,44 @@
+.phoneNumber {
+  background-color: #d1f1e7;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phoneNumber a {
+  color: #333;
+  text-decoration: none;
+}
+
+.phoneNumber b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90px;
+}
+
+.mask {
+  display: flex;
+  margin-right: 10px;
+}
+
+.mask li {
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #809789;
+  margin-right: 2px;
+  font-weight: 400;
+}
+
+.link {
+  color: #23ab7f;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

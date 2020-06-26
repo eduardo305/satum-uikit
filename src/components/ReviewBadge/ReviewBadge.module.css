@@ -1,0 +1,16 @@
+.reviewBadge {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #809789;
+  justify-content: center;
+}
+
+.reviewBadge svg {
+  color: #fce04c;
+}
+
+.column {
+  margin-right: 10px;
+}

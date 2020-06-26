@@ -63,8 +63,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
+  color: #333;
 }
 
 p {
@@ -77,4 +78,22 @@ span {
   font-weight: 500;
   color: #959b9a;
   font-size: 0.75rem;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  color: #23ab7f;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }

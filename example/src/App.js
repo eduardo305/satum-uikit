@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExampleComponent, Feature } from 'satum-uikit'
+import { ExampleComponent, Feature, ContactCard } from 'satum-uikit'
 import 'satum-uikit/dist/index.css'
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
       <Feature label='Bedroom' icon='icon-bed'>
         4
       </Feature>
+      <ContactCard />
       <ExampleComponent text='Create React Library Example 😄' />
     </>
   )

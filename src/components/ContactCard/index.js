@@ -10,8 +10,8 @@ const ContactCard = ({
   user: { photo, name, rate, phoneNumber, reviewUrl }
 }) => {
   return (
-    <Card>
-      <div className={styles.contactCard}>
+    <div className={styles.contactCard}>
+      <Card>
         <CardRow>
           <img src={photo} className={styles.photo} />
           <h1 className={styles.name}>
@@ -27,8 +27,8 @@ const ContactCard = ({
         <div className={styles.footer}>
           <Button label='Contact Agent' icon='icon-envelope-o' />
         </div>
-      </div>
-    </Card>
+      </Card>
+    </div>
   )
 }
 

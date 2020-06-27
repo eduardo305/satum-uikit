@@ -1,0 +1,75 @@
+.padThumbnailCard {
+  line-height: 1.8rem;
+  background-color: #fff;
+  transform: translateY(-50px);
+  width: 95%;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.section {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 20px;
+  color: #333;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.priceSection {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+  text-align: start;
+}
+
+.featuresSection {
+  display: flex;
+  text-align: start;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.featureItem:last-of-type {
+  border: none;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.featureValue {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.featureIcon {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #333;
+}
+
+.featureIcon:last-of-type {
+  border: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}

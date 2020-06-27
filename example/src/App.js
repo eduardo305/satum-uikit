@@ -1,5 +1,10 @@
 import React from 'react'
-import { ExampleComponent, Feature, ContactCard } from 'satum-uikit'
+import {
+  ExampleComponent,
+  Feature,
+  ContactCard,
+  PadThumbnail
+} from 'satum-uikit'
 import 'satum-uikit/dist/index.css'
 
 const user = {
@@ -12,15 +17,30 @@ const user = {
   email: 'laura.smith@satum.com'
 }
 
+const pad = {
+  newPad: true,
+  images: [
+    'https://photos.zillowstatic.com/cc_ft_384/ISq90stk8ib9ll1000000000.webp'
+  ],
+  price: '$4000',
+  numBed: 2,
+  numBath: 2,
+  sqft: 1300,
+  name: 'Bristol',
+  address: {
+    streets: '1283 Symbol st'
+  }
+}
+
 const App = () => {
   return (
     <>
       <Feature label='Bedroom' icon='icon-bed'>
         4
       </Feature>
-      <div style={{ position: 'relative' }}>
-        <ContactCard user={user} />
-      </div>
+      <ContactCard user={user} />
+
+      <PadThumbnail pad={pad} />
 
       <ExampleComponent text='Create React Library Example 😄' />
     </>

@@ -1,7 +1,7 @@
 .card {
-  padding: 10px 10px 0 10px;
   border-radius: 7px;
   border: 1px solid #dae0de;
   display: inline-block;
   background: #fff;
+  width: 100%;
 }

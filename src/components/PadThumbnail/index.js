@@ -8,12 +8,12 @@ const PadThumbnail = ({ pad }) => {
     <div className={styles.thumbnail}>
       <div className={styles.favorite}>
         <svg className='icon-heart-o icon'>
-          <use xlinkHref='/icons/icons.svg#icon-heart-o' />
+          <use xlinkHref='/assets/icons/icons.svg#icon-heart-o' />
         </svg>
       </div>
       {newPad && <div className={styles.badge}>new</div>}
       {images && (
-        <div className='thumbnail__images'>
+        <div className={styles.images}>
           <img src={images[0]} alt='pad image' />
         </div>
       )}

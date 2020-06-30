@@ -5,7 +5,7 @@ import styles from './PadThumbnail.module.css'
 const PadThumbnail = ({ pad }) => {
   const { newPad, images, ...other } = pad
   return (
-    <a className={styles.thumbnail}>
+    <div className={styles.thumbnail}>
       <div className={styles.favorite}>
         <svg className='icon-heart-o icon'>
           <use xlinkHref='/icons/icons.svg#icon-heart-o' />
@@ -18,7 +18,7 @@ const PadThumbnail = ({ pad }) => {
         </div>
       )}
       <PadThumbnailCard {...other} />
-    </a>
+    </div>
   )
 }
 

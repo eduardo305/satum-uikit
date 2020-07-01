@@ -2,13 +2,11 @@ import React from 'react'
 import PadThumbnailCard from './PadThumbnailCard'
 import styles from './PadThumbnail.module.css'
 
-const PadThumbnail = ({ pad, full = false }) => {
+const PadThumbnail = ({ pad }) => {
   const { newPad, images, ...other } = pad
 
-  const cssStyles = full ? (styles.thumbnail, styles.full) : styles.thumbnail
-
   return (
-    <div className={cssStyles}>
+    <div className={`${styles.thumbnail}`}>
       <div className={styles.favorite}>
         <svg className='icon-heart-o icon'>
           <use xlinkHref='/assets/icons/icons.svg#icon-heart-o' />

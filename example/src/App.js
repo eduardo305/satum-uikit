@@ -40,7 +40,7 @@ const App = () => {
       </Feature>
       <ContactCard user={user} />
 
-      <PadThumbnail pad={pad} />
+      <PadThumbnail pad={pad} full />
 
       <ExampleComponent text='Create React Library Example 😄' />
     </>

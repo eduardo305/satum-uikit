@@ -41,6 +41,6 @@
 
 .images img {
   width: 100%;
-  min-height: 205px;
+  height: 205px;
   border-radius: 4px;
 }

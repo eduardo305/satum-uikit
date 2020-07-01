@@ -4,6 +4,7 @@ import Feature from './components/Feature'
 import Card from './components/Card'
 import ContactCard from './components/ContactCard'
 import Button from './components/Button'
+import PillButton from './components/PillButton'
 import PadThumbnail from './components/PadThumbnail'
 import './index.css'
 
@@ -18,4 +19,4 @@ export const ExampleComponent = ({ text }) => {
   )
 }
 
-export { Feature, ContactCard, Card, Button, PadThumbnail }
+export { Feature, ContactCard, Card, Button, PadThumbnail, PillButton }

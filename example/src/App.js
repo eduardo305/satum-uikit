@@ -3,7 +3,9 @@ import {
   ExampleComponent,
   Feature,
   ContactCard,
-  PadThumbnail
+  PadThumbnail,
+  PillButton,
+  Button
 } from 'satum-uikit'
 import 'satum-uikit/dist/index.css'
 
@@ -41,6 +43,9 @@ const App = () => {
       <ContactCard user={user} />
 
       <PadThumbnail pad={pad} full />
+
+      <PillButton label='Filter' icon='icon-filter' />
+      <Button label='Filter' icon='icon-filter' />
 
       <ExampleComponent text='Create React Library Example 😄' />
     </>

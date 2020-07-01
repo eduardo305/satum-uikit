@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './Button.module.css'
+import styles from './PillButton.module.css'
 
-const Button = ({ icon, label, full = false, ...other }) => {
+const Pill = ({ icon, label, full = false, ...other }) => {
   const componentStyle = full
-    ? `${styles.button} ${styles.full}`
-    : `${styles.button}`
+    ? `${styles.pill} ${styles.full}`
+    : `${styles.pill}`
 
   return (
     <button className={componentStyle} {...other}>
@@ -13,9 +13,9 @@ const Button = ({ icon, label, full = false, ...other }) => {
           <use xlinkHref={`/assets/icons/icons.svg#${icon}`} />
         </svg>
       )}
-      {label}
+      <div>{label}</div>
     </button>
   )
 }
 
-export default Button
+export default Pill
